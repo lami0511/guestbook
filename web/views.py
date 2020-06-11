@@ -15,6 +15,6 @@ class MessageCreate(CreateView):
     fields =['user','subject','content']
     success_url = reverse_lazy('msg_list')
 
-class MessageDalate(DeleteView):
-    model=Message
+class MessageDelete(DeleteView):
+    model= Message
     success_url=reverse_lazy('msg_list')
